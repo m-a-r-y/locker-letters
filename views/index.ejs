@@ -5,21 +5,29 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src='/public/javascripts/index.js'></script>
   </head>
   <body>
 
 
+
     <form role="form">
         <div class="form-group">
-            <label for="myEmail">my email address</label>
-            <input type="email" class="form-control" id="myEmail" placeholder="Enter my email">
+            <label for="myEmail">Please enter your email:</label>
+            <input type="email" class="form-control" id="myEmail" placeholder="mine@domain.com">
         </div>
         <div class="form-group">
-            <label for="theirEmail">their email address</label>
-            <input type="email" class="form-control" id="theirEmail" placeholder="Enter their email">
+            <label for="theirEmail">Please enter recipient's email:</label>
+            <input type="email" class="form-control" id="theirEmail" placeholder="theirs@domain.com">
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
     </form>
+    <hr/>
+
+    <button type="submit" class="btn btn-default">Submit</button>
+
+    <% for (var i = 0; i < catFiles.length; i++) { %>
+       <div><img src="/images/<%= catFiles[i] %>" height="100"/></div>
+    <% } %>
 
 
 
