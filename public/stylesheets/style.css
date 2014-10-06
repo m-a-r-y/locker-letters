@@ -11,3 +11,21 @@ img {
     float: left;
     margin: 1em;
 }
+
+.font {
+    font-family: 'Pacifico', cursive;
+}
+
+.font1 {
+    font-family: 'Gochi Hand', cursive;
+}
+
+.colorbox {
+    opacity: .85;
+    /*background-color: #A8FFDC;*/
+}
+
+.textbox {
+    padding: 10px;
+}
+
