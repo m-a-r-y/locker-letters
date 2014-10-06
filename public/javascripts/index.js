@@ -1,6 +1,8 @@
-$( document ).ready(function() {
-    console.log( "ready!" );
-});
+//$( document ).ready(function() {
+//    $('#submit').on('click', function (){
+//       alert("Message en route!");
+//    });
+//});
 
 
 
