@@ -8,8 +8,9 @@ a {
 }
 
 img {
-    float: left;
+    float: right;
     margin: 1em;
+    height: 50% !important;
 }
 
 .font {
@@ -29,3 +30,10 @@ img {
     padding: 10px;
 }
 
+.row {
+    margin: 15px;
+}
+
+.p {
+    padding-left: 100px;
+}
