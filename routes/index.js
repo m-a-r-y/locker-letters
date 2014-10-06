@@ -7,7 +7,7 @@ var m = require('mailgun');
 router.post('/sendMail', function(req, res){
     var mg = new m.Mailgun('key-5fb6c139d9f06bffde33425f20ad98f7');
 
-    mg.sendText("no-reply@anon.com", req.body.theirEmail, "A New Message From Mamihlapinatapai", req.body.messages);
+    mg.sendText("no-reply@anon.com", req.body.theirEmail, "A Message From Mamihlapinatapai", req.body.messages);
     console.log(req.body.theirEmail);
     console.log(req.body.messages);
     res.redirect('/');
