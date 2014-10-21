@@ -3,36 +3,31 @@
   <head>
     <title>aMail</title>
       <META NAME="description" CONTENT="Send anonymous emails without shame or reservations.">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
       <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
       <script src="/javascripts/index.js"></script>
-
   </head>
-  <body class="colorbox">
+  <body class="container colorbox">
+  <img src="/images/pigeon.jpeg" class="hidden-xs img-responsive" height="50">
 
   <div class="font1 text-center">
       <h1>aMail</h1>
       <!--<p>"A look shared by two people, each wishing that the other will offer something that they both desire but are unwilling to suggest or offer themselves."</p>-->
-      <img src="/images/pigeon.jpeg" class="img-responsive" height="50">
-      <p class="p font1">Don't leave things unsaid, send an anonymous email</p>
-
+      <p class="p font1 text-center">Don't leave things unsaid, send an anonymous email</p>
   </div>
 
 
   <div class="textbox img-rounded">
     <strong><hr/></strong>
 
-    <div class="container img-rounded">
-        <!--<div class="row">-->
-        <!--<% for (var i = 0; i < catFiles.length; i++) { %>-->
-            <!--<img class="image" src="/images/<%= catFiles[i] %>" height="100"/>-->
-        <!--<% } %>-->
-        <!--</div>-->
-        <form role="form" class="form" action="/sendMail" method="post">
-            <div class="col-xs-12">
+    <div class="img-rounded">
+        <div class="col-xs-12">
+        <form role="form" class="form-horizontal" action="/sendMail" method="post">
                 <div class="form-group">
                     <label for="theirEmail" class="font">Recipient's email:</label>
                     <input type="email" name="theirEmail" class="form-control" id="theirEmail" placeholder="">
@@ -41,10 +36,10 @@
                     <label for="message" class="font">Message:</label>
                     <textarea class="form-control" name="messages" id="message" rows="5"></textarea>
                 </div>
-             </div>
-
             <button id="submit" type="submit" class="btn btn-default font">Submit</button>
         </form>
+        </div>
+
     </div>
     </div>
   </body>

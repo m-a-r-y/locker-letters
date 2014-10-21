@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  padding: 1em;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -26,14 +26,6 @@ img {
     /*background-color: #A8FFDC;*/
 }
 
-.textbox {
-    padding: 10px;
-}
-
 .row {
     margin: 15px;
-}
-
-.p {
-    padding-left: 100px;
 }
